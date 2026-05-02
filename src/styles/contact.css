@@ -1,0 +1,457 @@
+/* Contact Page Styles */
+.contact {
+  min-height: 100vh;
+  background-color: var(--primary-dark);
+}
+
+/* Contact Header */
+.contact-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.contact-header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+/* Contact Content */
+.contact-content {
+  padding: 3rem 20px;
+}
+
+.contact-info-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Card */
+.contact-card {
+  background-color: var(--secondary-dark);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.1);
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.country-flag {
+  font-size: 3rem;
+}
+
+.contact-value {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.contact-card .btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.contact-card .btn-whatsapp:hover {
+  background-color: #1fad50;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
+}
+
+.btn-lg {
+  font-size: 1.1rem;
+  padding: 14px 28px;
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info-simple {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .country-flag {
+    font-size: 2.5rem;
+  }
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn-submit {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 6px;
+  transition: var(--transition);
+  margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card:hover {
+  border-color: var(--accent-yellow);
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.contact-value {
+  color: var(--text-light);
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.contact-value a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-value a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+.contact-hours {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Quick Contact */
+.quick-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25d366, #20ba5a);
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+}
+
+.btn-call {
+  background: linear-gradient(135deg, var(--accent-blue), #0099cc);
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-call:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+/* Social Section */
+.social-section {
+  background-color: var(--primary-dark);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.social-section h4 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.social-links-contact {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links-contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  transition: var(--transition);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-links-contact a:hover {
+  background-color: var(--accent-blue);
+  color: var(--primary-dark);
+  border-color: var(--accent-blue);
+}
+
+/* Map Section */
+.map-section {
+  padding: 3rem 0;
+  background-color: var(--secondary-dark);
+}
+
+.map-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-blue);
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 3rem 0;
+  background-color: var(--primary-dark);
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-blue);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  border-color: var(--accent-yellow);
+  transform: translateY(-5px);
+}
+
+.faq-item h4 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header,
+  .faq-section,
+  .map-section {
+    padding: 2rem 0;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe {
+    min-height: 300px;
+  }
+
+  .quick-contact {
+    flex-direction: row;
+  }
+
+  .btn-whatsapp,
+  .btn-call {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 2rem 0;
+  }
+
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .quick-contact {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe {
+    min-height: 250px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "short_name": "Kennis PH",
+  "name": "Kennis Power House",
+  "icons": [
+    {
+      "src": "kennis-banner.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "kennis-banner.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a3a52",
+  "background_color": "#ffffff"
+}
